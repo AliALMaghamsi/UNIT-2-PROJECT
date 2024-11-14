@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'main',
     'projects',
     'about_me',
+    'dashboard',
+    
     
     
 ]
