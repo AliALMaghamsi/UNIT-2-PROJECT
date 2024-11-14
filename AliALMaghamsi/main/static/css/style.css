@@ -1,0 +1,31 @@
+
+.active{
+    color: red !important;
+}
+
+
+a{
+    color: white !important;
+}
+
+
+.dropdown-item:hover  {
+
+    background-color: gray;
+}
+
+.active_page {
+    
+    color: red !important;
+}
+
+.what{
+    color: red !important;
+}
+
+
+.bt:hover{
+    animation:swing infinite;
+    animation-duration: 0.5s;
+    
+}
