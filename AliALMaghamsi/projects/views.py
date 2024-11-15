@@ -23,16 +23,6 @@ def new_project_view(request:HttpRequest):
     return render(request,'projects/new_project.html',context={'project_form':ProjectForm , 'category':Project.CategoryChoices.choices})
 
 
-def project_detail_view(request:HttpRequest,project_id:int):
-    try:
-        project=Project.objects.get(pk=project_id)
-        
-    except Exception :
-        return redirect('main:error_view')
-    
-    return render(request,'projects/project_detail.html',context={'project':project})
-
-
 def update_project_view(request:HttpRequest,project_id:int):
     try:
         project=Project.objects.get(pk=project_id)

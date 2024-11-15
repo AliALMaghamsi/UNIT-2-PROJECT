@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <!-- Other Content Section -->
+    <hr class="border border-dark-subtle opacity-75">
     <div class="container text-white  text-center">
        
             <h2 class="display-4">About Me</h2>
@@ -55,22 +55,57 @@
             </a>
         
         
+    
     </div>
-    <div class="container text-white  text-center">
+    <hr class="border border-dark-subtle opacity-75">
+    <div class="container text-white  text-center d-flex flex-column gap-1">
        
         <h2 class="display-4">Projects</h2>
-        <p class="lead mt-3 text-start">
-            Theese are my main projects that am working on :
+        <p class="lead mt-3 text-start pt-3">
+            Here some Projecst that i did  :
         </p>
+        <div class="row mt-2 gap-2">
+            
+            {% for project in main_projects  %}
+                <div class="col-12 mb-4 card-subtitle">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            {% if project.video %}
+                                <a href="{{ project.video.url }}" target="_blank">Watch Video</a>
+                            {% elif project.image %}
+                                <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid">
+                            {% else %}
+                                <p>No media available</p>
+                            {% endif %}
+                        </div>
 
-        <a href="{% url 'about:about_me_view' %}" class="btn bg-dark border-dark text-white">see more Projects 
+                        
+                        <div class="col-md-8">
+                            <h2>{{ project.title }}</h2>
+                            <p class="text-start"><strong>Category:</strong> {{ project.category }}</p>
+                            <p class="text-start"><strong>Completed Date:</strong> {{ project.completed_date }}</p>
+                            <h5 class="text-start py-2">{{ project.description }}</h5>
+                            <p class="text-start"><strong>Technologies:</strong> {{ project.technologies }}</p>
+                            <div class="d-flex gap-3">
+                                <a href="{{ project.link }}" target="_blank" class="btn bg-secondary ">Project Link</a>
+                                <a href="{% url 'projects:project_detail_view' project.id %}" class="btn bg-secondary "> View Project</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+                
+        </div>
+
+        <a href="{% url 'about:about_me_view' %}" class="btn w-25 bg-dark text-white mt-3 align-self-center">see more Projects 
             <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
             </svg></span>
         </a>
-    
-    
-</div>
+    </div>
+   
 </div>
 
         

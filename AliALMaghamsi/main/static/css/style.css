@@ -6,6 +6,11 @@
 
 a{
     color: white !important;
+   
+}
+
+.btn{
+    background-color: grey !important;
 }
 
 
@@ -19,9 +24,7 @@ a{
     color: red !important;
 }
 
-.what{
-    color: red !important;
-}
+
 
 
 .bt:hover{
@@ -29,3 +32,4 @@ a{
     animation-duration: 0.5s;
     
 }
+

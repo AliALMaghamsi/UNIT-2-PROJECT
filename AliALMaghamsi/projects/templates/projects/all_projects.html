@@ -1,0 +1,46 @@
+{% extends 'main/base.hrml' %}
+
+
+
+
+{% block title %}
+    Projects
+{% endblock title %}
+    
+
+
+{% block content %}
+    <div class="container">
+        {% for project in main_projects  %}
+                <div class="col-12 mb-4 card-subtitle">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            {% if project.video %}
+                                <a href="{{ project.video.url }}" target="_blank">Watch Video</a>
+                            {% elif project.image %}
+                                <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid">
+                            {% else %}
+                                <p>No media available</p>
+                            {% endif %}
+                        </div>
+
+                        
+                        <div class="col-md-8">
+                            <h2>{{ project.title }}</h2>
+                            <p class="text-start"><strong>Category:</strong> {{ project.category }}</p>
+                            <p class="text-start"><strong>Completed Date:</strong> {{ project.completed_date }}</p>
+                            <h5 class="text-start py-2">{{ project.description }}</h5>
+                            <p class="text-start"><strong>Technologies:</strong> {{ project.technologies }}</p>
+                            <div class="d-flex gap-3">
+                                <a href="{{ project.link }}" target="_blank" class="btn bg-secondary ">Project Link</a>
+                                <a href="{% url 'projects:project_detail_view' project.id %}" class="btn bg-secondary "> View Project</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+    </div>
+{% endblock content %}
+    
