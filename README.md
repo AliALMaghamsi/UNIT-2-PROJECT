@@ -36,7 +36,7 @@ A personal website is website that represents you , your work , your career , yo
 
 ## (Project Name)
 
-## Ali ALMaghamsi 
+# Ali ALMaghamsi 
 
 ## Features List
 ## Visitor Side:
@@ -91,7 +91,7 @@ Delete a Project: Remove a project from the site.
 ![Visitor Wireframe](req/visitor_wireframe.png)
 
 ## Dashboard Wireframe
-![Dashboard Wireframe](req/dashboard_wireframe.png)
+![Dashboard Wireframe](req/Dashboard_wireframe.png)
 
 
 ## UML Diagrams for Models
