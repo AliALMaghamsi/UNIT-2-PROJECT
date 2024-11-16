@@ -52,7 +52,7 @@
                 </div>
                 <div style="width: 15%;">
                     <form method="get" class="d-flex">
-                        <select id="paginationDropdown" name="page" class="form-select" onchange="this.form.submit()">
+                        <select  name="page" class="form-select" onchange="this.form.submit()">
                             {% for page_number in display.paginator.page_range %}
                             <option value="{{ page_number }}" {% if display.number == page_number %}selected{% endif %}>
                                 {{ page_number }}
