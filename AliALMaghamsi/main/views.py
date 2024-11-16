@@ -21,3 +21,7 @@ def contact_view(request:HttpRequest):
             contact_form.save()
             return redirect("main:home_view")
     return render(request,'main/contact.html')
+
+
+def error_view(request:HttpRequest):
+    return render(request,"main/error.html")
