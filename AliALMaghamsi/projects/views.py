@@ -2,12 +2,18 @@ from django.shortcuts import render,redirect
 from django.http import HttpRequest,HttpResponse
 from .models import Project
 from .forms import ProjectForm
+from django.core.paginator import Paginator
 
 
 
 def all_projects_view(request:HttpRequest):
-    projects = Project.objects.all()    
-    return render(request,"projects/all_projects.html",context={'projects': projects})
+    page=request.GET.get('page')
+    projects = Project.objects.all()
+    paginator=Paginator(projects,2)
+    page_obj=paginator.get_page(page)
+
+    return render(request,"projects/all_projects.html",context={'projects': page_obj})
+
 
 
 def new_project_view(request:HttpRequest):
