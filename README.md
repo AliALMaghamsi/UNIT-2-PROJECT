@@ -34,11 +34,12 @@ A personal website is website that represents you , your work , your career , yo
 - Wireframe (shared as link or uploaded as a file) - You can use Figma or similar online wireframing/design software.
 - UML (shared as a link or uploaded as a file) - You can use Lucid Charts or similar online UML design tool.
 
-## (Project Name)
 
-# Ali ALMaghamsi 
+
+## Ali ALMaghamsi 
 
 ## Features List
+
 ## Visitor Side:
 
 # Home Page:
