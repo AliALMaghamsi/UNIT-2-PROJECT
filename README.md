@@ -35,15 +35,69 @@ A personal website is website that represents you , your work , your career , yo
 - UML (shared as a link or uploaded as a file) - You can use Lucid Charts or similar online UML design tool.
 
 ## (Project Name)
-(project description here.)
+
+## Ali ALMaghamsi 
 
 ## Features List
-- (list of features)
+## Visitor Side:
+
+# Home Page:
+A welcoming introduction and a hub for all the pages
+
+# About Page:
+Details about My professional journey, education, and experiences.
+Showcase My skills with visuals like charts or lists.
+
+# Resume Page:
+
+Include a downloadable PDF of My resume.
+And My resume if a vistor wants to see it 
+
+# Projects Page:
+
+list view of My projects, displaying a preview (e.g., title, category, date, and thumbnail).
+
+Clicking a project redirects to the View Project Page.
+
+View Project Page:
+
+Detailed information about a specific project:
+Title, description, technologies, date, links, and media (video/image).
+
+# Contact Page:
+
+A form where visitors can send a messages.
+Include fields like name, email, and message.
+
+## Admin Dashboard:
+
+# Manage Messages:
+
+View messages received via the contact form.
+
+# Manage Projects:
+
+Add a Project: Provide fields for title, description, category, date, media (image/video), and technologies.
+Update a Project: Edit project details.
+Delete a Project: Remove a project from the site.
 
 ## User Stories, Wireframes & UML links
-- (User stories document link here.)
-- (wireframe link here.)
-- (UML link here.)
+[User Stories Document](req/userStories.pdf)
+
+
+# Wireframes
+
+## Visitor Wireframe
+![Visitor Wireframe](req/visitor_wireframe.png)
+
+## Dashboard Wireframe
+![Dashboard Wireframe](req/dashboard_wireframe.png)
+
+
+## UML Diagrams for Models
+
+
+![UML Diagram](req/UML_diagram.png)
 
 
 ## Resources:
