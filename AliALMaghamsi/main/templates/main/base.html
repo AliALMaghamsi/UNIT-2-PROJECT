@@ -36,7 +36,7 @@
                             <a class="nav-link {% if request.resolver_match.view_name == 'projects:all_projects_view' %}active{% endif %}" href="{% url 'projects:all_projects_view' %}">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'main:contact_view' %}">Contact</a>
+                            <a class="nav-link {% if request.resolver_match.view_name == 'main:contact_view' %}active{% endif %}"" href="{% url 'main:contact_view' %}">Contact</a>
                         </li>
                        
                     </ul>

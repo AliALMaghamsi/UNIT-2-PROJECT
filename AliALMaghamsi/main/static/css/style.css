@@ -1,16 +1,12 @@
 
 .active{
-    color: red !important;
+    color: cyan !important;
 }
 
 
 a{
     color: white !important;
    
-}
-
-.btn{
-    background-color: grey !important;
 }
 
 
@@ -24,7 +20,9 @@ a{
     color: red !important;
 }
 
-
+.headers{
+    color: lightblue;
+}
 
 
 .bt:hover{
