@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-8 text-white">
                 <h2>{{ project.title }}</h2>
-                <p class="text-start"><strong>Category:</strong> {{ project.category }}</p>
+                <p class="text-start"><strong>Category:</strong> {{ project.get_category_display }}</p>
                 <p class="text-start"><strong>Completed Date:</strong> {{ project.completed_date }}</p>
                 <h5 class="text-start">{{project.description}}</h5>
                 <p class="text-start"><strong>Technologies:</strong> {{ project.technologies }}</p>
